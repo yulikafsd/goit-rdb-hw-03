@@ -1,4 +1,6 @@
-# goit-rdb-hw-03: Data loading and SQL basics. DQL commands
+# goit-rdb-hw-03: 
+
+Data loading and SQL basics. DQL commands
 
 Репозиторій містить виконання практичного домашнього завдання до Теми 3: імпорт датасету, робота зі структурою реляційних даних та написання базових запитів мовою вибірки даних DQL (Data Query Language) у середовищі MySQL Workbench.
 
