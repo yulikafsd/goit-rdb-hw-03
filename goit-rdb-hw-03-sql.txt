@@ -1,0 +1,36 @@
+CREATE SCHEMA IF NOT EXISTS `goit-rdb-hw-03`;
+
+use `goit-rdb-hw-03`;
+
+SELECT * 
+FROM products;
+
+SELECT 
+	name, 
+	phone 
+FROM shippers;
+
+SELECT 
+	AVG(price) AS average_price,
+	MIN(price) AS min_price,
+	MAX(price) AS max_price
+FROM products;
+
+SELECT 
+	DISTINCT 
+		category_id, 
+        price 
+FROM products
+ORDER BY price DESC
+LIMIT 10;
+
+SELECT COUNT(id) AS products_count
+FROM products
+WHERE price BETWEEN 20 AND 100;
+
+SELECT 
+    supplier_id, 
+    COUNT(id) AS products_count, 
+    AVG(price) AS average_price
+FROM products
+GROUP BY supplier_id;
